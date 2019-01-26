@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Times New Roman", "Palatino Linotype", serif; }
+
+.main-wrapper {
+  background: #ffffff; }
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/header_background_v1.jpg) no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  color: #eeeeee; }
+
+.top-wrapper {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.logo img {
+  height: 180px; }
+
+
+
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px; }
+  
+  nav {
+  padding: 15px; }
+  nav a {
+    text-decoration: none;
+    color: grey;
+    border-right: 1px solid #607d8b;
+    font-weight: 500; }
+  nav a:last-child {
+    border: none; }
+
+a.btn.btn-top, form button {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 80px;
+  background: #01acab;
+  border: none;
+  text-decoration: none;
+  color: #eeeeee;
+  transition-duration: 0.5s; }
+  a.btn.btn-top:hover, form button:hover {
+    background: #017979; }
+
+main {
+  max-width: 960px;
+  font-size: 1rem;
+  margin: auto;
+  color: black; }
+
+.toolbar {
+  text-align: right;
+  padding: 15px; }
+  .toolbar input {
+    padding: 12px 12px 12px 22px;
+    margin-right: 7px;
+    color: black;
+    background: inherit;
+    border: 1px solid grey; }
+
+.post-list h1 {
+  text-align: right;
+  text-transform: uppercase; }
+.post-list article {
+  background: grey;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+.post-list article > div {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.post-description {
+  font-size: 0.7em;
+  color: red;
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+
+.post h3 {
+  color: #0097a7;
+  text-transform: uppercase; }
+.post > p {
+  line-height: 30px; }
+
+.post-list .btn {
+  cursor: pointer;
+  padding: 18px 90px;
+  border: none;
+  background: blue;
+  color: grey;
+  text-transform: uppercase;
+  transition-duration: 0.5s; }
+  .post-list .btn:hover {
+    background: green; }
+
+.about {
+  padding: 15px; }
+  .about h1 {
+    text-align: right;
+    text-transform: uppercase; }
+  .about p {
+    line-height: 25px;
+    margin-bottom: 20px; }
+  .about div img {
+    width: 100%; }
+
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  
+  .contact-form {
+  text-align: right; }
+  .contact-form h4 {
+    text-transform: uppercase;
+    margin-bottom: 35px; }
+
+.input-block {
+  width: 100%;
+  display: inline-block; }
+  .input-block:first-child {
+    margin-right: 15px; }
+
+form {
+  font-size: 1rem; }
+  form input, form label {
+    width: 95%;
+    display: block; }
+  form label {
+    color: #0097a9; }
+	
+	
+footer {
+  padding: 16px;
+  font-size: 0.9em; }
+
+form input, form textarea {
+  color: blue;
+  background: inherit;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid blue; }
+form textarea {
+  width: 100%; }

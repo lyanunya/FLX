@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $fonts;
+}
+.main-wrapper {
+    background: $mainBackground;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    background: $headerBackground no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    color: $headerFontsColor;
+}
+.top-wrapper {
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.logo img {
+    height: 155px;
+}
+nav {
+    padding: 12px;
+    a {
+        padding: 12px 90px;
+        text-decoration: none;
+        color: $headerFontsColor;
+        border-right: 1px solid $navBorderColor;
+        font-weight: 675;
+    }
+    a:last-child {
+        border: none;
+    }
+}
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+a.btn.btn-top, form button {
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 20px 75px;
+    background: $topButtonBackground;
+    border: none;
+    text-decoration: none;
+    color: #eeeeee;
+    transition-duration: 0.7s;
+    &:hover {
+        background: darken($topButtonBackground, 10%);
+    }
+}
+
+main {
+    max-width: 970px;
+    font-size: $fontSize;
+    margin: auto;
+    color: $mainTextColor;
+}
+.toolbar {
+    text-align: right;
+    padding: 10px;
+    input {
+        padding: 12px 12px 12px 20px;
+        margin-right: 10px;
+        color: $mainTextColor;
+        background: inherit;
+        border: 1px solid grey;
+    }
+}
+.post-list {
+    h1 {
+        text-align: right;
+        text-transform: uppercase;
+    }
+    article {
+        background: $articleBackground;
+        padding: 12px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    article > div {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+.post-description {
+    font-size: 0.8em;
+    color: $postDescriptionColor;
+    border-bottom: 1px solid $postDescriptionBorder;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.post {
+    h3 {
+        color: $artecleHeaderColor;
+        text-transform: uppercase;
+    }
+    > p {
+        line-height: 30px;
+    }
+}
+.post-list .btn {
+    cursor: pointer;
+    padding: 15px 85px;
+    border: none;
+    background: $topButtonBackground;
+    color: #eeeeef;
+    text-transform: uppercase;
+    transition-duration: 0.7s;
+    &:hover {
+        background: darken($topButtonBackground, 10%);
+    }
+}
+.about {
+    padding: 12px;
+    h1 {
+        text-align: right;
+        text-transform: uppercase;
+    }
+    p {
+        line-height: 35px;
+        margin-bottom: 25px;
+    }
+    div img {
+        width: 100%;
+    }
+}
+
+.contact-form {
+    text-align: right;
+    h4 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.input-block {
+    width: 100%;
+    display: inline-block;
+    &:first-child {
+        margin-right: 15px;
+    }
+}
+form {
+    font-size: $fontSize;
+    input, label {
+        width: 100%;
+        display: block;
+    }
+    label {
+        color: $artecleHeaderColor;
+    }
+}
+form {
+    input, textarea {
+        color: $mainTextColor;
+        background: inherit;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid grey;
+    }
+    textarea {
+        width: 100%;
+    }
+}
+
+footer {
+    padding: 12px;
+    font-size: 0.8em;
+}
